@@ -1,0 +1,51 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif !important;
+   }
+   body{font-family: "Roboto", serif !important; background-color:#060606!important; padding: 0px;}
+   .px-25{padding: 0px 25px 0px 25px !important;}
+   .white{color:white !important;}
+   .nav-logo{max-width: 170px;}
+   .menu-logo{
+    border-right: 1px solid#0000001c;
+    padding: 0px 20px 0px 30px;
+}
+/* btn css */
+.btn-close{font-size: 20px!important;}
+/* font css */
+.fs-20{font-size: 20px !important;}
+.fs-18{font-size: 1.1rem !important;}
+/* clr css */
+.black{color: #000 !important;}
+
+/* index page*/
+
+.nav-item a:hover{color: #e50000 !important;}
+
+.menu1 li a{
+    position: relative;
+}
+
+.menu1 li a::after {
+    content: ''; /* Empty content to create the line */
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0px !important;
+    height: 3px; /* Thickness of the line */
+    background-color:#e7e7e7; /* Color of the line */
+    transition: width 0.3s ease-in-out;
+}
+
+.menu1 li a:hover::after {
+    content: ''; /* Empty content to create the line */
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 60px !important;
+    height: 3px; /* Thickness of the line */
+    background-color:#e7e7e7; /* Color of the line */
+}
