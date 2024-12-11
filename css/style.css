@@ -40,8 +40,10 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 .w-80{width: 80% !important;}
 .mb-50{margin-bottom: 50px !important;}
 .py50x30{padding: 50px 30px !important;}
-.border-r-30{border-radius: 30px;}
+.border-r-30{border-radius: 30px!important;}
+.border-r-20{border-radius: 20px 0px 20px 0px!important;}
 .p2{padding: 2px !important;}
+.p3{padding: 3px !important;}
 
 /* index page*/
 .nav-logo{max-width: 170px;}
@@ -420,24 +422,29 @@ height: 45px;
     width: 130px;
     margin: -15px;
 }
-
-.accordion-item {
-    margin-bottom: 15px; /* Space between accordion items */
-    border-bottom-right-radius: 20px !important;
-    border-top-right-radius: 0px !important;
-    border-top-left-radius: 20px !important;
-    border-bottom-left-radius: 0px !important;
-    overflow: hidden; /* Prevent content from overflowing */
-}
-
-.accordion-item{
+.accordion-button ,.accordion-body ,.accordion-header{
     position: relative;
-    margin-bottom: 15px; /* Adds some spacing between items */
-    border-radius: 10px; /* Optional: Add some rounding to the corners */
+    background-color: #1f2327 !important;
+    color: #ffffff !important;
 }
-.accordion-button{
-    border-bottom-right-radius: 20px !important;
-    border-top-right-radius: 0px !important;
-    border-top-left-radius: 20px !important;
-    border-bottom-left-radius: 0px !important;
+
+.accordion-button::after {
+    content: ''; /* Default sign is '+' */
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1.5rem; /* Adjust icon position */
+    transition: transform 0.3s ease;
+    background-image:url(/img/plus.svg);
+}
+
+.accordion-button.collapsed::after {
+    content: ''; /* Collapsed state shows '+' */
+    background-image:url(/img/plus.svg);
+}   
+
+.accordion-button:not(.collapsed)::after {
+    content: ''; /* Expanded state shows '-' */
+    transform: rotate(180deg) !important;
+    background-image:url(/img/minus.svg) !important;
+    top: 7px;
 }
