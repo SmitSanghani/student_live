@@ -22,7 +22,9 @@
 
 <body>
     <!-- navbar start -->
-    <nav class="navbar fixed-top px-25 pt-1 ">
+    <!-- <div id="cursor"></div>
+    <div id="cursor-blr"></div> -->
+    <nav class="navbar fixed-top px-25 pt-1">
         <div class="container-fluid ">
             <a class="navbar-brand" href="index.html"><img src="/img/logo-nav.png" alt="brand-logo"
                     class="nav-logo"></a>
@@ -1394,6 +1396,19 @@
         <!-- fooetr area end -->
         <script src="/js/wow.js"></script>
         <script src="/js/bootstrap.bundle.min.js"></script>
+<!-- 
+        <script>
+            var crsr = document.querySelector("#cursor")
+            var crsrblr = document.querySelector("#cursor-blr")
+            document.addEventListener("mousemove", function(dets) {
+                crsr.style.left = dets.x + "px"
+                crsr.style.top = dets.y + "px"
+                
+                crsrblr.style.left = dets.x -150 + "px"
+                crsrblr.style.top = dets.y -150 + "px"
+            })
+           
+        </script> -->        
 </body>
 
 </html>

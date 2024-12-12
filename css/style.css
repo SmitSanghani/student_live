@@ -574,3 +574,22 @@ height: 45px;
       border-radius: 50%;
     }
   }
+
+  /* cursor animation */
+
+  #cursor{
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+    cursor: pointer !important;
+  }
+  #cursor-blr{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    filter: blur(80px);
+    background-color: #4eedff;
+  }
