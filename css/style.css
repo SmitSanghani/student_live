@@ -2,7 +2,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Poppins' !important;
+   
 }
 body{font-family: 'Poppins' !important; background-color:#060606!important; padding: 0px;}
 
@@ -30,7 +30,7 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 .white{color:white !important;}
 .bg-gradient-clr{background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);}
 
-/* margin-padding */
+/* margin-padding and other*/
 .pt-100{padding-top: 100px !important;}
 .px-25{padding: 0px 25px 0px 25px !important;}
 .py-100{padding: 100px 0px !important;}
@@ -44,7 +44,8 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 .border-r-20{border-radius: 20px 0px 20px 0px!important;}
 .p2{padding: 2px !important;}
 .p3{padding: 3px !important;}
-
+.py-35{padding: 0px 35px !important;}
+.opacity-1_25{opacity: 1.25;}
 /* index page*/
 .nav-logo{max-width: 170px;}
 .menu-logo{
@@ -102,6 +103,7 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 .button-btn {
     background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
     border: none;
+    transition: 0.5s;
     color: #FFFFFF !important;
     text-transform: capitalize;
     box-shadow: 6px 8px 36px rgba(2, 173, 240, .1);
@@ -110,6 +112,13 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+.button-btn:hover ,.button-btn-2:hover ,.button-outline-btn:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+    transition: 0.5s;
+}
+.button-btn ,.button-btn-2 ,.button-outline-btn{transition: 0.5s;}
 /* animation wave */
 .wave_shape{
     animation: wave 20s linear infinite;
@@ -182,6 +191,10 @@ height: 45px;
     background-color: #16191C;
     border-radius: 20px;
     height: 100%;
+    box-shadow: 
+    0px 4px 10px rgba(255, 0, 0, 0.1),
+    0px 0px 5px #cc46ff,      
+    0px 0px 15px #4659ff; 
 }
 
 .step{
@@ -448,3 +461,116 @@ height: 45px;
     background-image:url(/img/minus.svg) !important;
     top: 7px;
 }
+.footer-icon li{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    list-style: none;
+    padding: 0px;
+    background-color: #CC46FF;
+    margin: 0px 20px 0px 0px;
+}
+
+/* animation for bubool */
+.wraper {
+    position: relative;
+}
+  .box div {
+    z-index: 1;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+  .box div:nth-child(1) {
+    top: 30%;
+    left: -15%;
+    animation: animate 10s linear infinite;
+  }
+
+  .box div:nth-child(2) {
+    top: 70%;
+    left: 20%;
+    animation: animate 7s linear infinite;
+  }
+
+  .box div:nth-child(3) {
+    top: 57%;
+    left: -10%;
+    animation: animate 9s linear infinite;
+  }
+
+  .box div:nth-child(4) {
+    top: 80%;
+    left: -20%;
+    animation: animate 10s linear infinite;
+  }
+
+  .box div:nth-child(5) {
+    top: 32%;
+    left: 2%;
+    animation: animate 6s linear infinite;
+  }
+
+  .box div:nth-child(6) {
+    top: 90%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+  }
+
+  .box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+  }
+
+  .box div:nth-child(8) {
+    top: 32%;
+    left: 100%;
+    animation: animate 16s linear infinite;
+  }
+
+  .box div:nth-child(9) {
+    top: 80%;
+    left: 50%;
+    animation: animate 9s linear infinite;
+  }
+
+  .box div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 9s linear infinite;
+  }
+  .box div:nth-child(11) {
+    top: 30%;
+    left: 47%;
+    animation: animate 12s linear infinite;
+  }
+  .box div:nth-child(12) {
+    top: 60%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  .wraper img{
+    position: relative;
+    z-index: 2;
+  }
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0) scale(0);
+      opacity: 1;
+      border-radius: 0%;
+    }
+
+    100% {
+      transform: translateY(-200px) rotate(360deg) scale(1);
+      opacity: 0;
+      border-radius: 50%;
+    }
+  }

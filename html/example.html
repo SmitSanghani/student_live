@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowing Cursor Hover Area</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #434343;
+      color: white;
+    }
+
+    .container {
+      padding: 20px;
+      width: 1200px !important;
+      margin: auto;
+    }
+
+    .col-md-4 {
+      padding: 15px;
+      position: relative;
+    }
+
+    .work-shadow {
+      position: relative;
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      overflow: hidden;
+      /* Default cursor removed */
+    }
+
+    .work-shadow::before {
+      content: ' ';
+      position: absolute;
+      background: radial-gradient(--clr), transparent;
+      width: 500px;
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid py-100">
+    <div class="container">
+      <div class="row g-90">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="work-shadow" style="--clr:#0f0;">
+            <h2 class="fs-22 fw-semibold title-span">
+              Blockchain Integration
+            </h2>
+            <p class="fs-16 white fw-normal mb-0">At the core of Web3 games lies blockchain technology...</p>
+            <div class="custom-cursor active"></div>
+            <div class="hover-area"></div> <!-- 100px x 100px hover area -->
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="work-shadow" style="--clr:#0f0;">
+            <h2 class="fs-22 fw-semibold title-span">
+              Non-Fungible Tokens (NFTs)
+            </h2>
+            <p class="fs-16 white fw-normal mb-0">Our Web3 developer utilizes cryptocurrencies...</p>
+            <div class="custom-cursor active"></div>
+            <div class="hover-area"></div> <!-- 100px x 100px hover area -->
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="work-shadow" style="--clr:#0f0;">
+            <h2 class="fs-22 fw-semibold title-span">
+              Cryptocurrencies and Play-to-Earn (P2E)
+            </h2>
+            <p class="fs-16 white fw-normal mb-0">At the core of Web3 games lies blockchain technology...</p>
+            <div class="custom-cursor active"></div>
+            <div class="hover-area"></div> <!-- 100px x 100px hover area -->
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="work-shadow" style="--clr:#0f0;">
+            <h2 class="fs-22 fw-semibold title-span">
+              Smart Contracts
+            </h2>
+            <p class="fs-16 white fw-normal mb-0">The development of smart contracts is the next crucial step...</p>
+            <div class="custom-cursor active"></div>
+            <div class="hover-area"></div> <!-- 100px x 100px hover area -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/wow.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
