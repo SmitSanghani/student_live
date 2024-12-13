@@ -19,6 +19,7 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 .fs-16{font-size: 16px !important;letter-spacing: .02em;;}
 .fs-18{font-size: 1.1rem !important;}
 .fs-24{font-size: 24px !important;}
+.fs-26{font-size: 26px !important;}
 .fs-60 {font-size: 60px;}
 .fs-36 {font-size: 36px;}
 .fs-30 {font-size: 30px;}
@@ -26,9 +27,13 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 
 /* clr css */
 .black{color: #000 !important;}
+.black-bg{background-color: #000 !important;}
+
 .bg-black{background-color: #000 !important;}
 .white{color:white !important;}
 .bg-gradient-clr{background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);}
+.active{background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);}
+.no-avtive-bg-clr{background: #92c9ff3a;}
 
 /* margin-padding and other*/
 .pt-100{padding-top: 100px !important;}
@@ -41,11 +46,14 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 .mb-50{margin-bottom: 50px !important;}
 .py50x30{padding: 50px 30px !important;}
 .border-r-30{border-radius: 30px!important;}
-.border-r-20{border-radius: 20px 0px 20px 0px!important;}
+.border-r-20{border-radius: 20px!important;}
+.border-tlrb-20{border-radius: 20px 0px 20px 0px!important;}
+.border-r-10{border-radius: 10px!important;}
 .p2{padding: 2px !important;}
 .p3{padding: 3px !important;}
 .py-35{padding: 0px 35px !important;}
 .opacity-1_25{opacity: 1.25;}
+
 /* index page*/
 .nav-logo{max-width: 170px;}
 .menu-logo{
@@ -101,6 +109,10 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 }
 
 .button-btn {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.button-btn,.button-btn-clip{
     background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
     border: none;
     transition: 0.5s;
@@ -109,14 +121,17 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
     box-shadow: 6px 8px 36px rgba(2, 173, 240, .1);
     padding: 15px 28px;
     line-height: 19px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+} 
+
+.button-btn-clip {
+    clip-path: polygon(0 12px, 12px 0, 90% 0, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 90%, 0% 10%) !important;
 }
 
 .button-btn:hover ,.button-btn-2:hover ,.button-outline-btn:hover{
-    cursor: pointer;
+    cursor: pointer !important;
     transform: scale(1.09);
     transition: 0.5s;
+    z-index: -5;
 }
 .button-btn ,.button-btn-2 ,.button-outline-btn{transition: 0.5s;}
 /* animation wave */
@@ -139,6 +154,7 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
     left: 0;
     bottom: 0;
     transform: translateY(50%);
+    z-index: 1;
 }
 .effect-3{
     position: absolute;
@@ -187,6 +203,7 @@ width: 45px !important;
 height: 45px;
 }
 .work-shadow{
+    position: relative;
     padding: 25px;
     background-color: #16191C;
     border-radius: 20px;
@@ -287,6 +304,7 @@ height: 45px;
     z-index: 1;
 }
 .accordion-body li{list-style: none;}
+
 .accordion-body li::before{
     content: ' ';
     position: absolute;
@@ -297,26 +315,33 @@ height: 45px;
     list-style: none;
     left: 0;
 }
-.bg-two-shadow{
+.bg-two-shadow,.bg-two-meta-shadow{
     position: relative;
     padding: 30px;
     background-color: #000;
-    height: 100%;
     width: 100%;
+    height: 100%; 
     margin-bottom: 30px;
-    border-radius: 35px 35px 0px 0px;
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
+.bg-two-shadow{border-radius: 35px 35px 0px 0px !important;}
+.outer-box {
+    border-radius: 37px 37px 0 0; /* Slightly larger radius than inner box */    margin-bottom: 30px; /* Maintain spacing */
+    height:200px;
+}
+.divs{
+    height: 100px;
+    overflow: hidden;
+}
+.meta-outer-box {height:150px;margin-bottom: 30px !important;}
+
 .scroll-container {
     max-height: 660px; /* Limit height for scrolling */
     overflow-y: auto; /* Enable vertical scrolling */
     padding-right: 18px; /* Add some spacing for a scrollbar */
 }
 
-.outer-box {
-    border-radius: 37px 37px 0 0; /* Slightly larger radius than inner box */    margin-bottom: 30px; /* Maintain spacing */
-    height: 200px;
-}
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -329,6 +354,7 @@ height: 45px;
     background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
     border-radius: 5px;
 }
+
 .Global-step{
     position: relative;
     padding: 25px;
@@ -435,10 +461,11 @@ height: 45px;
     width: 130px;
     margin: -15px;
 }
-.accordion-button ,.accordion-body ,.accordion-header{
+.accordion-button ,.accordion-body ,.accordion-header,.accordion-item{
     position: relative;
     background-color: #1f2327 !important;
     color: #ffffff !important;
+    border: none !important;
 }
 
 .accordion-button::after {
@@ -460,6 +487,27 @@ height: 45px;
     transform: rotate(180deg) !important;
     background-image:url(/img/minus.svg) !important;
     top: 7px;
+}
+
+.meta-outer-accordion .accordion-button::after {
+    content: ''; /* Default sign is '+' */
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1.5rem; /* Adjust icon position */
+    transition: transform 0.3s ease;
+    background-image:url(/img/down\ arrow.png);
+}
+
+.meta-outer-accordion .accordion-button.collapsed::after {
+    content: ''; /* Collapsed state shows '+' */
+    background-image:url(/img/down\ arrow.png);
+}   
+
+.meta-outer-accordion .accordion-button:not(.collapsed)::after {
+    content: ''; /* Expanded state shows '-' */
+    transform: rotate(180deg) !important;
+    background-image:url(/img/down\ arrow.png) !important;
+    top:16px;
 }
 .footer-icon li{
     font-size: 20px;
@@ -559,7 +607,7 @@ height: 45px;
   }
   .wraper img{
     position: relative;
-    z-index: 2;
+    z-index:2;
   }
   @keyframes animate {
     0% {
@@ -577,7 +625,7 @@ height: 45px;
 
   /* cursor animation */
 
-  #cursor{
+  /* #cursor{
     border-radius: 50%;
     position: fixed;
     z-index: 99;
@@ -592,4 +640,71 @@ height: 45px;
     z-index: 99;
     filter: blur(80px);
     background-color: #4eedff;
+  } */
+
+  /* metaverse Lp page css */
+
+  .metaverse-step{
+    position: absolute;
+    font-size: 60px;
+    color: #000000;
+    font-weight: 500;
+    top: 9px;
+    left: 105px;
+    -webkit-text-stroke: 1px #999999;
   }
+  .metaverse-step img{
+    position: absolute;
+    margin: 30px 0px 0px 5px;
+  }
+  .h-62{height: 62px;}
+/* meta scroller  */
+
+.meta-scroll-container {
+    max-height: 520px; /* Limit height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 18px; /* Add some spacing for a scrollbar */
+}
+.meta-scroll-container::-webkit-scrollbar{width: 5px;}
+
+.meta-scroll-container::-webkit-scrollbar-thumb{
+    height: 30px;
+    width: 10px !important;
+    border-radius: 5px;
+    background: #999999 !important;
+}
+/* owl / card carousl css */
+
+.solution-card {
+    height: auto;
+    width: 100%;
+    padding: 50px 30px 30px 30px;
+    background: rgb(0, 0, 0);
+    color: #000000;
+    text-align: center;
+    clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.outer-solution-card{
+    position: relative;
+    clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);    border: 2px solid transparent;
+    background-image: linear-gradient(90deg, #cc46ff, #4659ff), linear-gradient(#121212, #000000);
+    background-origin: border-box;
+}
+
+.owl-carousel img{
+    height: 90px !important;
+    width: 70px !important;
+    margin: 0px auto 20px auto;
+}
+
+.owl-prev, .owl-next {
+    background-color: transparent;
+    border: none;
+    font-size: 50px !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+
