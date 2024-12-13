@@ -19,6 +19,7 @@ body{font-family: 'Poppins' !important; background-color:#060606!important; padd
 .fs-16{font-size: 16px !important;letter-spacing: .02em;;}
 .fs-18{font-size: 1.1rem !important;}
 .fs-24{font-size: 24px !important;}
+.fs-25{font-size: 25px !important;}
 .fs-26{font-size: 26px !important;}
 .fs-60 {font-size: 60px;}
 .fs-36 {font-size: 36px;}
@@ -707,4 +708,47 @@ height: 45px;
     cursor: pointer;
 }
 
+/* time line area css */
 
+.text-box{
+    position: relative;
+    width: 40% !important;
+    min-height: 200px;
+    padding: 30px 30px !important;
+    background-color: #117CC1;
+    position: relative;
+}
+
+.left-container{left: 0;}
+.right-container{left: 50%;}
+
+/* .timeline-container{
+    position: relative;
+} */
+
+.timeline-number{
+    position: absolute;
+    padding: 10px 17px;
+    background: linear-gradient(89.48deg, #cc46ff 0%, #4659ff 100%);
+    color: #ffffff;
+    border-radius: 50%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.left-container .timeline-number{
+    right:-57px;
+}
+.right-container .timeline-number{
+    right:520px;
+}
+.timeline-container::before{
+    content: ' ';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #e50000;
+    left:46%;
+    transform: translatex(-50%);
+}
