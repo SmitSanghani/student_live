@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #c7ffad;
+            /* Dark background color */
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            padding: 10px;
+            border: 2px solid rgb(0, 0, 0);
+            background-color:transparent;
+            color: #fff;
+            text-align: center;
+            /* Adjusted clip-path to square left-bottom and right-top corners */
+            clip-path: polygon(5% 0,
+                    /* Left-top cut */
+                    5% 0,
+                    /* Right-top cut */
+                    100% 0%,
+                    /* Right-top cut */
+                    100% 80%,
+                    /* Bottom-right cut */
+                    95% 100%,
+                    /* Bottom-right cut */
+                    0 100%,
+                    /* Left-bottom square */
+                    0 20%
+                    /* Left-top cut */
+                );
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .outer-card {
+            clip-path: polygon(5% 0,
+                    /* Left-top cut */
+                    5% 0,
+                    /* Right-top cut */
+                    100% 0%,
+                    /* Right-top cut */
+                    100% 80%,
+                    /* Bottom-right cut */
+                    95% 100%,
+                    /* Bottom-right cut */
+                    0 100%,
+                    /* Left-bottom square */
+                    0 20%
+                    /* Left-top cut */
+                );
+            z-index: 1;
+            position: absolute;
+            background-color: transparent;
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+         .card-icon {
+            font-size: 50px;
+            color: #ff0080;
+            /* Pink color for the icon */
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #a3b6ff;
+        }
+
+        .card-text {
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #cfcfcf;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-card">
+        <div class="card">
+            <!-- <div class="card-icon">⚙️</div> -->
+            <div class="card-title">Pioneers</div>
+            <!-- <div class="card-text">
+      We’ve been building virtual worlds and experimenting with immersive technologies long before the term "metaverse" entered the mainstream. Our metaverse development team offers unparalleled expertise in creating next-gen immersive experiences.
+    </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
