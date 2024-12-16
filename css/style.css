@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Poppins' !important; 
-    background-color:#060606!important;
+    background-color:#000000!important;
     color: #ffffff !important;
     padding: 0px;
 }
@@ -47,6 +47,7 @@ body{
 
 /* margin-padding and other*/
 .pt-100{padding-top: 100px !important;}
+.p30{padding: 30px !important;}
 .px-25{padding: 0px 25px 0px 25px !important;}
 .py-100{padding: 100px 0px !important;}
 .g-60 {row-gap: 60px !important;}
@@ -140,7 +141,8 @@ body{
 .button-outline-btn:hover,
 .btn-transparent:hover,
 .discuss-btn-transparent:hover,
-.button-btn-clip:hover{
+.button-btn-clip:hover
+.button-btn-transparent:hover{
     cursor: pointer !important;
     transform: scale(1.09);
     transition: 0.5s;
@@ -219,13 +221,14 @@ height: 45px;
 .work-shadow{
     position: relative;
     padding: 25px;
-    background-color: #16191C;
+    background-color: #060606;
     border-radius: 20px;
     height: 100%;
+    width: 100%;
     box-shadow: 
     0px 4px 10px rgba(255, 0, 0, 0.1),
     0px 0px 5px #cc46ff,      
-    0px 0px 15px #4659ff; 
+    0px 0px 15px #4659ff;
 }
 
 .step{
@@ -325,6 +328,13 @@ height: 45px;
     width: 254px;
     border: none;
     background: transparent;
+}
+
+.button-btn-transparent{
+    background: transparent;
+    padding: 15px 30px!important;
+    border: 2px solid white;
+    color: white;
 }
 
 .accordion-body li{list-style: none;}
@@ -859,4 +869,33 @@ height: 45px;
     background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
     height: 62px;
     width: 62px;
+}
+
+/* key Features btn */
+
+.Features-btn span{
+    padding: 20px 32px !important;
+    border-radius: 50px !important;
+    border: none;
+    width: 100%; 
+    background-color: #464646;
+    transition: 0.3s;
+}
+.Features-btn{
+    padding: 0px 0px 3px 0px!important;
+    width: 100%;
+    margin-bottom: 0px !important;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+}
+.Features-btn span:hover{
+    background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.outer-work-shadow{
+    position: absolute;
+    padding: 0px 50px !important;
+    background-color: #117CC1;
+    border-radius: 20px;
 }
