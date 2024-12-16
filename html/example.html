@@ -4,98 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metaverse Card</title>
+    <title>Metaverse Benefits</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             margin: 0;
-            background: #c7ffad;
-            /* Dark background color */
-            font-family: Arial, sans-serif;
         }
 
-        .card {
+        .benefit-shadow {
             position: relative;
-            width: 300px;
-            padding: 10px;
-            border: 2px solid rgb(0, 0, 0);
-            background-color:transparent;
-            color: #fff;
-            text-align: center;
-            /* Adjusted clip-path to square left-bottom and right-top corners */
-            clip-path: polygon(5% 0,
-                    /* Left-top cut */
-                    5% 0,
-                    /* Right-top cut */
-                    100% 0%,
-                    /* Right-top cut */
-                    100% 80%,
-                    /* Bottom-right cut */
-                    95% 100%,
-                    /* Bottom-right cut */
-                    0 100%,
-                    /* Left-bottom square */
-                    0 20%
-                    /* Left-top cut */
-                );
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            background-color: #ff5858c4;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 3;
         }
 
-        .outer-card {
-            clip-path: polygon(5% 0,
-                    /* Left-top cut */
-                    5% 0,
-                    /* Right-top cut */
-                    100% 0%,
-                    /* Right-top cut */
-                    100% 80%,
-                    /* Bottom-right cut */
-                    95% 100%,
-                    /* Bottom-right cut */
-                    0 100%,
-                    /* Left-bottom square */
-                    0 20%
-                    /* Left-top cut */
-                );
-            z-index: 1;
-            position: absolute;
-            background-color: transparent;
-            border: 2px solid rgb(255, 255, 255);
+        .benefit-shadow img {
+            width: 100%;
         }
 
-         .card-icon {
-            font-size: 50px;
-            color: #ff0080;
-            /* Pink color for the icon */
-            margin-bottom: 10px;
-        }
-
-        .card-title {
-            font-size: 1.5em;
+        .benefit-shadow h2 {
+            font-size: 26px;
             font-weight: bold;
-            margin-bottom: 10px;
-            color: #a3b6ff;
+            margin-top: 15px;
         }
 
-        .card-text {
-            font-size: 0.95em;
-            line-height: 1.6;
-            color: #cfcfcf;
+        .benefit-shadow p {
+            font-size: 16px;
+            color: white;
+            margin-top: 10px;
+            height: 0px !important;
+            overflow: hidden;
+            opacity: 0;
+            transition: height 1s, opacity 1s;
+        }
+
+        .benefit-shadow:hover {
+            transform: translateY(-10px);
+        }
+
+        .benefit-shadow:hover p {
+            opacity: 1 !important;
+            height: auto !important;
+        }
+
+        .benefit-shadow .drop-shadow {
+            position: absolute;
+            left: 0px;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .col-md-4 {
+            transition: width 0.5s;
+        }
+
+        .col-md-4:hover {
+            width: 100% !important; /* Make it full width on hover */
+        }
+
+        .col-md-6 {
+            transition: width 0.5s;
         }
     </style>
 </head>
 
 <body>
-    <div class="outer-card">
-        <div class="card">
-            <!-- <div class="card-icon">⚙️</div> -->
-            <div class="card-title">Pioneers</div>
-            <!-- <div class="card-text">
-      We’ve been building virtual worlds and experimenting with immersive technologies long before the term "metaverse" entered the mainstream. Our metaverse development team offers unparalleled expertise in creating next-gen immersive experiences.
-    </div> -->
+    <div class="container-fluid py-100">
+        <div class="container">
+            <h2 class="fs-36 white my-3 fw-semibold text-center">
+                Benefits of <span class="title-span">Metaverse Development</span>
+            </h2>
+            <p class="fs-16 white fw-normal text-center">With our metaverse development company, you can experience
+                every benefit of a virtual space that you can think of.
+            </p>
+            <div class="row mt-5 g-60">
+                <!-- Col-md-4 Boxes -->
+                <div class="col-md-4">
+                    <div class="benefit-shadow text-center h-100 w-100 p-3 border-r-20">
+                        <img src="/img/meta-benifit-img-1.png" alt="">
+                        <h2 class="fs-26 fw-semibold mb-0 mt-3">Customizable <br>Creation</h2>
+                        <p class="fs-16 white fw-normal mb-0 mt-3 h0">Our Web3 game developer crafts a framework that
+                            works on a popular feature of blockchain-powered games: letting users own their assets in
+                            the form of NFTs. Therefore, the players can own in-game assets like avatars, weapons,
+                            land, and more as NFTs on blockchain - completely secure.
+                        </p>
+                        <img src="/img/benefit_drop.webp" alt="" class="drop-shadow">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-shadow text-center h-100 w-100 p-3 border-r-20">
+                        <img src="/img/meta-benifit-img-2.png" alt="">
+                        <h2 class="fs-26 fw-semibold mb-0 mt-3">Customizable <br>Creation</h2>
+                        <p class="fs-16 white fw-normal mt-3 h0">Why not focus on providing players with a rewarding
+                            experience when developing a game? We add secure P2E game models that help users earn
+                            crypto tokens and NFTs for their time and effort playing your game.
+                        </p>
+                        <img src="/img/benefit_drop.webp" alt="" class="drop-shadow">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-shadow text-center h-100 w-100 p-3 border-r-20">
+                        <img src="/img/meta-benifit-img-3.png" alt="">
+                        <h2 class="fs-26 fw-semibold mb-0 mt-3">Customizable <br>Creation</h2>
+                        <p class="fs-16 white fw-normal mt-3 h0">Why not focus on providing players with a rewarding
+                            experience when developing a game? We add secure P2E game models that help users earn
+                            crypto tokens and NFTs for their time and effort playing your game.
+                        </p>
+                        <img src="/img/benefit_drop.webp" alt="" class="drop-shadow">
+                    </div>
+                </div>
+
+                <!-- Col-md-6 Boxes -->
+                <div class="col-md-6">
+                    <div class="benefit-shadow text-center h-100 w-100 p-3 border-r-20">
+                        <img src="/img/meta-benifit-img-4.png" alt="">
+                        <h2 class="fs-26 fw-semibold mb-0 mt-3">Customizable <br>Creation</h2>
+                        <p class="fs-16 white fw-normal mt-3 h0">Our Web3 gaming company ensures that every project we
+                            handle has transparent mechanics by encoding probabilities on blockchain to build trust
+                            between your game and its players.
+                        </p>
+                        <img src="/img/benefit_drop.webp" alt="" class="drop-shadow">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="benefit-shadow text-center h-100 w-100 p-3 border-r-20">
+                        <img src="/img/meta-benifit-img-5.png" alt="">
+                        <h2 class="fs-26 fw-semibold mb-0 mt-3">Customizable <br>Creation</h2>
+                        <p class="fs-16 white fw-normal mt-3 h0">Our Web3 gaming company ensures that every project we
+                            handle has transparent mechanics by encoding probabilities on blockchain to build trust
+                            between your game and its players.
+                        </p>
+                        <img src="/img/benefit_drop.webp" alt="" class="drop-shadow">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-primary text-decoration-none fw-semibold">Let's Connect!</button>
+            </div>
         </div>
     </div>
 </body>
