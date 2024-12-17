@@ -3,120 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Accordion</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Full-Width Owl Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <style>
-        /* Base styles for accordion step and h1 */
-        body{
-            background: #000;
+        .nft-play-shadow {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 30px;
+            background-color: #fff;
         }
-        .accordion-step-active {
-            height: 30px;
-            width: 30px;
-            border-radius: 3px;
-            background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+        .slider {
+            padding: 30px;
+            border-radius: 30px;
+        }
+        .btn-nft {
+            border: none;
+            padding: 10px 20px;
             color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
         }
-
-        .hover h1 {
-            margin: 0;
-            font-size: 22px;
-            font-weight: 600;
-            color: #000; /* Default h1 color */
+        .bg-grad-pink-clr {
+            background: linear-gradient(to right, #ff7eb3, #ff758c);
         }
-
-        /* Styling when accordion is collapsed */
-        .accordion-header .collapsed .accordion-step-active {
-            background: white !important;
-            color: black;
-            background-clip: text;
+        .py-100 {
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
-
-        .accordion-header .collapsed .hover h1 {
-            background: white;
-            color: #000;
-        }
-
-        /* Styling when accordion is expanded */
-        .accordion-header .accordion-button:not(.collapsed) .accordion-step-active {
-            background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
-            color: #fff;
-        }
-
-        .accordion-header .accordion-button:not(.collapsed) .hover h1 {
-            background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
-            background-clip: text;
-            color: transparent;
+        .owl-carousel .item {
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row" id="accordionExample3">
-            <div class="accordion">
-                <!-- Accordion Item 1 -->
-                <h2 class="accordion-header">
-                    <button class="accordion-button shadow-none py-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <div class="hover d-flex justify-content-center align-items-center">
-                            <span class="accordion-step-active d-flex justify-content-center align-items-center">1</span>
-                            <h1 class="fs-22 mb-0 ms-4 fw-semibold">Discovery Call</h1>
-                        </div>
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample3">
-                    <div class="accordion-body">
-                        <p class="fs-16 ps-50">We’ll work closely with you, brainstorming innovative ideas and exploring the exciting possibilities of blockchain technology. We'll refine your concept through interactive workshops and discussions, ensuring it aligns with market trends and resonates with your target audience.</p>
-                    </div>
+    <!-- Owl Carousel Section -->
+    <div class="container-fluid py-100">
+        <div class="container">
+            <div class="row">
+                <div class="nft-row d-flex justify-content-between align-items-center">
+                    <h2 class="fs-40 m-0">NFT</h2>
+                    <a href="#" class="nft-btn-transparent text-decoration-none">My NFT</a>
                 </div>
-
-                <!-- Accordion Item 2 -->
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="hover d-flex justify-content-center align-items-center">
-                            <span class="accordion-step-active d-flex justify-content-center align-items-center">2</span>
-                            <h1 class="fs-22 mb-0 ms-4 fw-semibold">Technical Feasibility</h1>
+            </div>
+            <div class="row mt-4">
+                <div class="owl-carousel owl-theme">
+                    <!-- Single Full-Width Card 1 -->
+                    <div class="item">
+                        <div class="nft-play-shadow">
+                            <div class="slider border-r-30">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5">
+                                        <h2 class="fs-36 fw-semibold">Discover, Buy, and Sell Unique NFTs</h2>
+                                        <p class="fs-18 fw-normal mt-4">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit.
+                                        </p>
+                                        <button class="btn-nft bg-grad-pink-clr mt-3">What is NFT?</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="/img/nft-slider-img.png" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse mt-0" data-bs-parent="#accordionExample3">
-                    <div class="accordion-body">
-                        <p class="fs-16 ps-50">We analyze the technical feasibility and create a scalable architecture to ensure a robust solution tailored to your needs.</p>
                     </div>
-                </div>
-
-                <!-- Accordion Item 3 -->
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <div class="hover d-flex justify-content-center align-items-center">
-                            <span class="accordion-step-active d-flex justify-content-center align-items-center">3</span>
-                            <h1 class="fs-22 mb-0 ms-4 fw-semibold">Development</h1>
+                    <!-- Single Full-Width Card 2 -->
+                    <div class="item">
+                        <div class="nft-play-shadow">
+                            <div class="slider border-r-30">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-5">
+                                        <h2 class="fs-36 fw-semibold">Start Your NFT Journey</h2>
+                                        <p class="fs-18 fw-normal mt-4">
+                                            Explore the world of digital assets and unique collectibles.
+                                        </p>
+                                        <button class="btn-nft bg-grad-pink-clr mt-3">Learn More</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="/img/nft-slider-img.png" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
-                    <div class="accordion-body">
-                        <p class="fs-16 ps-50">Our development team builds the solution, ensuring it adheres to industry standards and delivers exceptional performance.</p>
                     </div>
-                </div>
-
-                <!-- Accordion Item 4 -->
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <div class="hover d-flex justify-content-center align-items-center">
-                            <span class="accordion-step-active d-flex justify-content-center align-items-center">4</span>
-                            <h1 class="fs-22 mb-0 ms-4 fw-semibold">Testing & Support</h1>
-                        </div>
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
-                    <div class="accordion-body">
-                        <p class="fs-16 ps-50">We conduct rigorous testing and provide ongoing support to ensure your product works flawlessly in real-world conditions.</p>
-                    </div>
-                </div>
+                </div> <!-- End Owl Carousel -->
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery and Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                items: 1, /* Only 1 card at a time */
+            });
+        });
+    </script>
 </body>
 </html>
