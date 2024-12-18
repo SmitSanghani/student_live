@@ -390,26 +390,21 @@ height: 45px;
 
 .meta-outer-box {height:150px;margin-bottom: 30px !important;}
 
-.scroll-container {
+.scroll-container ,body{
     max-height: 660px; /* Limit height for scrolling */
     overflow-y: auto; /* Enable vertical scrolling */
-    padding-right: 18px; /* Add some spacing for a scrollbar */
 }
-
-::-webkit-scrollbar{width: 10px;}
-::-webkit-scrollbar-track{
+.scroll-container::-webkit-scrollbar ,body::-webkit-scrollbar{width: 10px;}
+.scroll-container::-webkit-scrollbar-track ,body::-webkit-scrollbar-track{
     background-color: #393939;
     border-radius: 5px;
 }
-::-webkit-scrollbar-thumb{
+.scroll-container::-webkit-scrollbar-thumb ,body::-webkit-scrollbar-thumb{
     height: 130px;
     background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
     border-radius: 5px;
 }
 
-.Auction-scroll{
-    overflow-y: auto; /* Enable vertical scrolling */
-}
 .Global-step{
     position: relative;
     padding: 25px;
@@ -1125,18 +1120,46 @@ margin: auto;}
     border-radius: 10px;
     cursor: pointer;
 }
-.Auction-Progress{
-    padding: 20px;
-    background-color: #5f2727;
-    border-radius: 20px;
-    width: 100%;
-    max-height: 450px; /* Limit height for scrolling */
-    overflow-y: auto;
-}
+
 .Auction-lists{
     padding: 10px;
     background-color: #464646;
     border-radius: 10PX;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 .Auction-lists h1{margin-bottom: 0px !important;}
+
+.box-1{
+    padding: 20px 20px 2px 20px;
+    background-color: #000000;
+    border-radius: 20px 20px 0px 0px;
+}
+.box-2{
+    max-height: 353px;
+    overflow-y: auto;
+    width: 100% !important;
+    padding: 0px 20px 20px 20px;
+    background-color: #000000;
+    border-radius: 0px 0px 20px 20px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.Auction-box{
+    padding: 3px;
+    background: linear-gradient(135deg, #E025CE 0%, white 50%, #BD24E6 100%);    border-radius: 20px;
+}
+
+.box-2::-webkit-scrollbar{
+    width: 10px;
+}
+.box-2::-webkit-scrollbar-track{
+    padding-right: 10px !important;
+    background-color: #393939;
+    border-radius: 5px;
+}
+.box-2::-webkit-scrollbar-thumb{
+    background: linear-gradient(135deg, #E025CE 0%, #BD24E6 100%);    border-radius: 20px;
+    border-radius: 5px;
+}
+
