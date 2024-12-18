@@ -19,6 +19,7 @@ body{
 /* btn css */
 .btn-close{font-size: 20px!important;}
 .button-btn-50{border-radius: 50px !important;}
+
 /* font css */
 .fs-20{font-size: 20px !important;}
 .fs-16{font-size: 16px !important;letter-spacing: .02em;;}
@@ -28,10 +29,11 @@ body{
 .fs-26{font-size: 26px !important;}
 .fs-40{font-size: 40px;}
 .fs-60 {font-size: 60px;}
+.fs-34 {font-size: 34px;}
 .fs-36 {font-size: 36px;}
 .fs-30 {font-size: 30px;}
 .fs-22 {font-size: 22px;}
-
+.fw-ex-bold{font-weight: 800;}
 /* clr css */
 .black{color: #000 !important;}
 .black-bg{background-color: #000 !important;}
@@ -47,6 +49,7 @@ body{
 .active{background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);}
 .no-avtive-bg-clr{background: #92c9ff3a;}
 .border-none{border: none !important;}
+.carousel-inner .active{background: none !important;}
 
 /* margin-padding and other*/
 .pt-100{padding-top: 100px !important;}
@@ -370,9 +373,21 @@ height: 45px;
     height:200px;
 }
 .divs{
+    position: relative;
     height: 100px;
     overflow: hidden;
 }
+.bg-two-meta-shadow::before{
+    content: ' ';
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+}
+
 .meta-outer-box {height:150px;margin-bottom: 30px !important;}
 
 .scroll-container {
@@ -392,6 +407,9 @@ height: 45px;
     border-radius: 5px;
 }
 
+.Auction-scroll{
+    overflow-y: auto; /* Enable vertical scrolling */
+}
 .Global-step{
     position: relative;
     padding: 25px;
@@ -526,7 +544,7 @@ height: 45px;
 
 .meta-outer-accordion .accordion-button.collapsed::after {
     content: ''; /* Collapsed state shows '+' */
-    background-image:url(/img/down\ arrow.png);
+    background-image:url(/img/down\ arrow.png) !important;
 }   
 
 .meta-outer-accordion .accordion-button:not(.collapsed)::after {
@@ -698,7 +716,6 @@ height: 45px;
     background: #999999 !important;
 }
 /* owl / card carousl css */
-
 .solution-card {
     height: auto;
     width: 100%;
@@ -706,15 +723,15 @@ height: 45px;
     background: rgb(0, 0, 0);
     color: #000000;
     text-align: center;
-    clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+    clip-path: polygon(0% 7%, 7% 0%, 30% 0%, 35% 5%, 65% 5%, 70% 0%, 93% 0%, 100% 7%, 100% 93%, 93% 100%, 7% 100%, 0% 93%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .outer-solution-card{
     position: relative;
-    clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);    border: 2px solid transparent;
+    padding: 2px;
+    clip-path: polygon(0% 7%, 7% 0%, 30% 0%, 35% 5%, 65% 5%, 70% 0%, 93% 0%, 100% 7%, 100% 93%, 93% 100%, 7% 100%, 0% 93%);
     background-image: linear-gradient(90deg, #cc46ff, #4659ff), linear-gradient(#121212, #000000);
-    background-origin: border-box;
 }
 
 .owl-carousel .solution-img{
@@ -757,7 +774,7 @@ height: 45px;
     }
 }
 .left-container{left: 0;}
-.right-container{left: 57%}
+.right-container{left: 57%;}
 
 .timeline-container{position: relative;}
 
@@ -788,16 +805,16 @@ height: 45px;
     transform: translateX(-50%);
     transform: translatey(-50%);
 }
-.left-container .timeline-number::after{width: 39px; left:40px;}
-.right-container .timeline-number::after{width: 34px; right: 40px !important;}
-.right-container .timeline-number::after ,.left-container .timeline-number::after{
-    content: ' ';
-    position: absolute;
-    height: 4px;
-    background: #999999 !important;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    .left-container .timeline-number::after{width: 39px; left:40px;}
+    .right-container .timeline-number::after{width: 34px; right: 40px !important;}
+    .right-container .timeline-number::after ,.left-container .timeline-number::after{
+        content: ' ';
+        position: absolute;
+        height: 4px;
+        background: #999999 !important;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
 /* .benefit-shadow{
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1) !important;
@@ -997,17 +1014,22 @@ height: 45px;
     background: linear-gradient(141.43deg, #bd24e6 -15.07%, #e40fac 147.95%);
 }
 .btn-nft{
-    padding: 14px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px !important;
+    height: 53px !important ;
     background-color: #117CC1;
     color: #E1EAF5;
     border-radius: 6px;
     border: none;
 }
+
 .nft-title-span{
     background: linear-gradient(141.43deg, #bd24e6 -15.07%, #e40fac 147.95%);
     background-clip: text;
     color: transparent;
- }
+}
 .navbar-nav .nav-item a:hover{
     color: rgb(219, 102, 252)!important;
     cursor: pointer;
@@ -1019,21 +1041,102 @@ height: 45px;
     border-radius: 6px;
     border: 2px solid rgb(219, 102, 252);
 }
-
 .slider{
     position: relative;
     padding: 40px !important;
     box-shadow: 0px -20px 55px rgba(224, 37, 206, 0.14);
     backdrop-filter: blur(50.7619514465332px);
     z-index:2;
-    background-color: #000000;
+    background-color: #383838;
 }
 
 .nft-play-shadow{
     position: relative;
-    padding: 1px 2px !important;
-    border-radius: 30px 50px; 
-    background: linear-gradient(141.43deg, #bd24e6 -15.07%, #e40fac 147.95%);
-    z-index: 1;
+    padding: 2px!important;
+    border-radius: 30px 30px !important; 
+    background: linear-gradient(165deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
 }
 
+.nft-slider .carousel-indicators [data-bs-target] {
+    width: 50px;
+    height: 8px;
+    cursor: pointer;
+    background-color: #fff !important;
+    opacity:1;
+    transition: opacity .6s ease;
+    border-radius: 15px !important;
+    border: none;
+}
+.nft-slider .carousel-indicators .active{
+    background: linear-gradient(165deg,  #E025CE 0%,51%, #BD24E6 100%) !important;
+}
+.nft-slider{position: relative;}
+.nft-slider .carousel-indicators{
+    position: absolute;
+    bottom: -50px;
+}
+.nft-card{
+    padding: 60px !important;
+    background-color: #000000;
+}
+.outer-nft-card{
+    padding: 3px !important;
+    background: linear-gradient(135deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
+}
+.nft-section .owl-carousel .owl-item img {
+    display: block;
+    width: 30%;
+margin: auto;}
+
+.nft-section .owl-dot  span {display: none !important;}
+.nft-section .active{background: none;}
+
+.bid-nft-card{
+    padding: 20px 50px !important;
+    background: #000219;
+    border-radius: 30px;
+}
+.bid-nft-card{transform: skew(-5deg);}
+
+.outer-bid-nft-card{
+    transform: skew(-4deg);
+    border-radius: 33px;
+    padding: 2px !important;
+    background: linear-gradient(153deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
+}
+.bid-nft-list li{
+    list-style: url(/img/nft-list-icon-Vector.png);
+}
+.time-box{padding: 10px 56px !important; border-radius: 50px;background: #000;}
+.outer-time-box{
+    padding: 2px !important;
+    border-radius: 50px;
+    background: linear-gradient(175deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
+}
+.gno-box{
+    padding: 10px;
+    background-color: #000000;
+    border: 3px solid #E025CE;
+}
+.btn-Bid{
+    padding: 10px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Auction-Progress{
+    padding: 20px;
+    background-color: #5f2727;
+    border-radius: 20px;
+    width: 100%;
+    max-height: 450px; /* Limit height for scrolling */
+    overflow-y: auto;
+}
+.Auction-lists{
+    padding: 10px;
+    background-color: #464646;
+    border-radius: 10PX;
+    margin-bottom: 16px;
+}
+.Auction-lists h1{margin-bottom: 0px !important;}
