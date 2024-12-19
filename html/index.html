@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/css/animate.css">-->
+    <link rel="stylesheet" href="/css/animate.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <!-- <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/wow.js"></script> -->
+    <script src="/js/wow.js"></script>
 </head>
 
 <body>
@@ -195,7 +195,7 @@
     </div>
     <!-- Why Do You Need area end -->
 
-    <!--   Metaverse Development area start -->
+    <!-- benifit  Metaverse Development area start -->
     <div class="container-fluid py-100">
         <div class="container">
             <h2 class="fs-36 white my-3 fw-semibold text-center">
@@ -280,7 +280,7 @@
             <img src="/img/dot-3.png" alt="" width="100%">
         </div>
     </div>
-    <!--   Metaverse Development area end -->
+    <!-- benifit Metaverse Development area end -->
 
     <!-- How Does Web3 Game Development area start -->
     <div class="container-fluid py-100">
@@ -1394,9 +1394,8 @@
             <h2 class="fs-16 fw-medium white">2023 © Global MLM Software All rights reserved.</h2>
         </div>
         <!-- fooetr area end -->
-        <script src="/js/wow.js"></script>
-        <script src="/js/bootstrap.bundle.min.js"></script>
-<!-- 
+
+        <!-- 
         <script>
             var crsr = document.querySelector("#cursor")
             var crsrblr = document.querySelector("#cursor-blr")
@@ -1408,7 +1407,25 @@
                 crsrblr.style.top = dets.y -150 + "px"
             })
            
-        </script> -->        
+        </script> -->
+
+        <script>
+            wow = new WOW(
+                {
+                    animateClass: 'animated',
+                    offset: 100,
+                    callback: function (box) {
+                        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                    }
+                }
+            );
+            wow.init();
+
+            new wow().init();
+        </script>
+
+        <script src="/js/wow.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

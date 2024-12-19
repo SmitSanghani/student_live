@@ -1049,7 +1049,7 @@ height: 45px;
     position: relative;
     padding: 2px!important;
     border-radius: 30px 30px !important; 
-    background: linear-gradient(165deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
+    background: linear-gradient(155deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
 }
 
 .nft-slider .carousel-indicators [data-bs-target] {
@@ -1130,7 +1130,6 @@ margin: auto;}
 .Auction-lists h1{margin-bottom: 0px !important;}
 
 .box-1{
-    padding: 20px 20px 2px 20px;
     background-color: #000000;
     border-radius: 20px 20px 0px 0px;
 }
@@ -1138,21 +1137,25 @@ margin: auto;}
     max-height: 353px;
     overflow-y: auto;
     width: 100% !important;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 0px 0px;
     background-color: #000000;
     border-radius: 0px 0px 20px 20px;
     overflow-y: auto;
     position: relative;
 }
-
-.Auction-box{
+.outer-Auction-box{
     padding: 3px;
     background: linear-gradient(135deg, #E025CE 0%, white 50%, #BD24E6 100%);    border-radius: 20px;
 }
-
-.box-2::-webkit-scrollbar{
-    width: 10px;
+.Auction-box{
+    height: 433px;
+    background-color: #000000;
+    width: 374px;
+    border-radius: 20px;
+    padding: 10px;
 }
+
+.box-2::-webkit-scrollbar{width: 10px;}
 .box-2::-webkit-scrollbar-track{
     padding-right: 10px !important;
     background-color: #393939;
@@ -1163,3 +1166,226 @@ margin: auto;}
     border-radius: 5px;
 }
 
+.py14x44{padding: 14px 44px !important;}
+
+.dropdown-menu {
+    border: 1px solid #dadada;
+    display: none; /* Hidden initially */
+    position: absolute;
+    width: 100% !important;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+.dropdown-menu label {display: block;padding: 10px;}
+.dropdown-menu label input {margin-right: 10px;}
+.multiselect {
+    position: relative;
+    width: 60%; /* Adjust width as needed */
+}
+
+.selectBox {
+    cursor: pointer;
+    background-color: #000000;
+    padding: 10px;
+    border: 2px solid #E025CE;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectBox i {
+    transform: rotate(227deg);
+    transition: transform 0.3s; /* For rotating the arrow icon */
+}
+.selectBox.open i.arrow {transform: rotate(44deg); /* Rotate the arrow icon */}
+.dropdown-menu {
+    border: 1px solid #dadada;
+    display: none; /* Hidden initially */
+    position: absolute;
+    width:200px !important;
+    z-index: 1000;
+    background: linear-gradient(165deg,  #E025CE 0%,51%, #BD24E6 100%) !important;
+    border-radius: 20px;
+}
+.dropdown-menu label {display: flex;align-items: center;}
+.dropdown-menu label input{height: 16px;width: 16px;}
+.dropdown-menu.show {display: block;}
+.dropdown .arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.Marketplace-box{
+    padding: 30px;
+    background-color: #117CC1;
+}
+.outer-Marketplace-box{
+    padding: 3px !important;
+    background: linear-gradient(155deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
+}
+
+.Marketplace-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #111827; /* Dark background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Adjust as needed */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+.Marketplace-box tbody > tr >td:nth-child(1){padding: 12px 50px 12px 12px !important;}
+.Marketplace-box tbody > tr >td:nth-last-child(1){text-align: end;}
+.Marketplace-box .nft-type ,thead tr > th:nth-child(2){padding: 12px 0px;}
+.Marketplace-box table thead tr th{font-size: 22px;font-weight: 500;}
+.Marketplace-box table table tr td{font-size: 18px;font-weight: 600;}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff; /* White text */
+}
+
+th, td {
+    padding: 12px 12px;
+    text-align: left;
+}
+.nft-type::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 8px;
+    background-color: #E025CE; /* Purple dot */
+}
+
+.nft-type{display: flex;align-items: center;}
+.buy-button {
+    background-color: #E025CE; /* Purple button */
+    color: #ffffff; /* Dark text */
+    border: none;
+    padding: 8px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #c084fc; /* Slightly darker purple on hover */
+}
+@media (max-width: 600px) {
+    th, td {
+        font-size: 14px; /* Reduce font size on smaller screens */
+        padding: 8px 10px;
+    }
+
+    .nft-container {
+        padding: 10px;
+    }
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #1f2937; /* Dark background */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.outer-pg-number{
+    padding: 1px !important;
+    border-radius: 6px;
+    margin: 0px 5px;
+    background: linear-gradient(145deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
+}
+.page-number:hover{background-color: #374151;}
+.pagination .arrow {
+    color: #E025CE;
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.arrow:hover{color:#E025CE;}
+.pagination .active-number{background-color: #E025CE;}
+.Marketplace-box table thead{border-bottom: 1px solid rgba(189, 189, 189, 0.219);}
+
+.aaa{
+    padding: 3px;
+    margin: 10px !important;
+    background: linear-gradient(150deg,  #E025CE 0%, rgba(255, 255, 255, 0) 51%, #BD24E6 100%);
+}
+
+#master {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+#master {
+    text-rendering: optimizeLegibility
+}
+
+#master-container .content {
+    height: auto;
+    margin-left: inherit;
+    margin-right: inherit
+}
+
+#master-container-scroller .master-container-scroller_item a {
+    text-decoration: none; /* Remove underline */
+}
+
+#master-container-scroller {
+    height: 66px;
+    margin-bottom: -6px;
+    overflow: hidden;
+    position: relative
+}
+
+#master-container-scroller .master-container-scroller_item {
+    display: block;
+    padding-bottom: 6px;
+    animation: scroll 6s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0px); /* Starting position: 3D */
+    }
+    50% {
+        transform: translateY(-70px); /* 3D scrolls out */
+    }
+    100% {
+        transform: translateY(-140px); /* Secure scrolls out */
+    }
+
+}
+/* first page animation */
+
+@keyframes fadeInUpw {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

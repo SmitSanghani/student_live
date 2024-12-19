@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Code Example</title>
+    <style>
+        html, body {
+            scroll-snap-type: y mandatory;
+            margin: 0;
+            font-family: "Space Mono", monospace;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 12vw;
+            scroll-snap-align: start;
+        }
+
+        .small {
+            height: 70vh;
+        }
+
+        .one {
+            background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            color: #fff;
+        }
+
+        .two {
+            background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+            color: #fff;
+        }
+
+        .three {
+            background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+            color: #fff;
+        }
+
+        .four {
+            background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+            color: #fff;
+        }
+
+        .five {
+            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="one"> 
+        <div data-aos="fade-up">one</div> 
+    </section>
+    <section class="two"> 
+        <div data-aos="fade-up">two</div> 
+    </section>
+    <section class="three"> 
+        <div data-aos="fade-up">three</div> 
+    </section>
+    <section class="four"> 
+        <div data-aos="fade-up">four</div> 
+    </section>
+    <section class="small five"> 
+        <div data-aos="fade-up">five</div> 
+    </section>
+    <section class="one"> 
+        <div data-aos="fade-up">one</div> 
+    </section>
+    <section class="two"> 
+        <div data-aos="fade-up">two</div> 
+    </section>
+    <section class="three"> 
+        <div data-aos="fade-up">three</div> 
+    </section>
+    <section class="four"> 
+        <div data-aos="fade-up">four</div> 
+    </section>
+    <section class="small five"> 
+        <div data-aos="fade-up">five</div> 
+    </section>
+    <section class="one"> 
+        <div data-aos="fade-up">one</div> 
+    </section>
+    <section class="two"> 
+        <div data-aos="fade-up">two</div> 
+    </section>
+    <section class="three"> 
+        <div data-aos="fade-up">three</div> 
+    </section>
+    <section class="four"> 
+        <div data-aos="fade-up">four</div> 
+    </section>
+    <section class="small five"> 
+        <div data-aos="fade-up">five</div> 
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+
+</body>
+</html>
