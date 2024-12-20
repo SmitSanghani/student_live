@@ -437,6 +437,14 @@ height: 45px;
     z-index: -1;
     background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
 }
+.bg-white-btn.selected {
+    color: black; /* Set the text color to black */
+    background-color: black; /* Set background color to black */
+    font-weight: bold; /* Optional: Keep text bold if desired */
+    border-color: black; /* Optional: Add border if needed */
+}
+
+.bg-white-btn.selected:hover {background-color: black; /* Maintain black background on hover */}
 
 .bg-white-btn,.bg-stack-btn{
     text-transform: capitalize;
@@ -1389,3 +1397,16 @@ th, td {
       transform: translateY(0);
     }
   }
+.image-section {display: none;}
+.image-section.selected {display: block;}
+
+/* index risponsive */
+
+@media screen and (min-width:0px) and (max-width:767px){
+    .px-25{
+        padding: 0px 10px !important;
+    }
+    .effect-1,.effect-2{display: none;}
+
+}
+

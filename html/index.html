@@ -22,12 +22,10 @@
 
 <body>
     <!-- navbar start -->
-    <!-- <div id="cursor"></div>
-    <div id="cursor-blr"></div> -->
     <nav class="navbar fixed-top px-25 pt-1">
         <div class="container-fluid ">
             <a class="navbar-brand" href="index.html"><img src="/img/logo-nav.png" alt="brand-logo"
-                    class="nav-logo"></a>
+                    class="nav-logo" width="100%"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars white"></i>
@@ -867,45 +865,58 @@
                 <div class="text-center">
                     <h1 class="white fs-36 fw-semibold mb-5">Tech Stack For Web3 Game Development Platforms</h1>
                 </div>
-                <div class="Platforms-btn d-flex d-md-flex justify-content-center mb-4 ">
-                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium red.active"
-                        data-target="content1">
-                        <span class="white fs-18 ">3D Modeling</span>
+                <div class="Platforms-btn d-flex d-md-flex justify-content-center mb-4">
+                    <a href="#" class="bg-white-btn text-decoration-none fs-18 fw-medium selected" data-target="image1">
+                        <span class="white fs-18">3D Modeling</span>
                     </a>
-                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium" data-target="content2">
-                        <span class="white fs-18 ">Back-End Blockchain Development</span>
+                    <a href="#" class="bg-white-btn text-decoration-none fs-18 fw-medium" data-target="image2">
+                        <span class="white fs-18">Back-End Blockchain Development</span>
                     </a>
-                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium" data-target="content3">
+                    <a href="#" class="bg-white-btn text-decoration-none fs-18 fw-medium" data-target="image3">
                         <span class="white fs-18">Front-End Blockchain Development</span>
                     </a>
                 </div>
                 <div class="Platforms-btn d-flex d-md-flex justify-content-center mb-4">
-                    <a href="" class="bg-white-btn  text-decoration-none fs-18 fw-medium bg-white">
-                        <span class="title-span fs-18 ">AR/VR Development</span>
+                    <a href="" class="bg-white-btn  text-decoration-none fs-18 fw-medium bg-greay" data-target="image4">
+                        <span class="white fs-18 ">AR/VR Development</span>
                     </a>
-                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium bg-greay">
+                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium bg-greay" data-target="image5">
                         <span class="white fs-18 ">IoT Development</span>
                     </a>
-                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium bg-greay">
+                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium bg-greay" data-target="image6">
                         <span class="white fs-18 ">Programming Languages</span>
                     </a>
-                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium bg-greay">
+                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium bg-greay" data-target="image7">
                         <span class="white fs-18">Wallets</span>
                     </a>
-                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium bg-greay">
+                    <a href="" class="bg-white-btn text-decoration-none fs-18 fw-medium bg-greay" data-target="image8">
                         <span class="white fs-18 ">Storage</span>
                     </a>
                 </div>
                 <hr class="white">
-                <span class="white fs-30 fw-semibold">AR/VR Development</span>
-                <div id="content1" class="content-section1">
-                    <img src="/img/demo-img-1.png" alt="" width="80%">
+                <div id="image1" class="image-section selected">
+                    <img src="/img/demo-img-1.png" alt="Demo Image 1" width="80%">
                 </div>
-                <div id="content2" class="content-section1" style="display: none;">
-                    <img src="/img/demo-img-2.png.jpg" alt="" width="80%">
+                <div id="image2" class="image-section">
+                    <img src="/img/demo-img-2.png.jpg" alt="Demo Image 2" width="80%">
                 </div>
-                <div id="content3" class="content-section1" style="display: none;">
-                    <img src="/img/demo-img-3.jpg" alt="" width="80%">
+                <div id="image3" class="image-section">
+                    <img src="/img/demo-img-3.jpg" alt="Demo Image 3" width="80%">
+                </div>
+                <div id="image4" class="image-section">
+                    <img src="/img/demo-img-4.jpg" alt="Demo Image 4" width="80%">
+                </div>
+                <div id="image5" class="image-section">
+                    <img src="/img/demo-img-5.jpg" alt="Demo Image 5" width="80%">
+                </div>
+                <div id="image6" class="image-section">
+                    <img src="/img/demo-img-6.jpg" alt="Demo Image 6" width="80%">
+                </div>
+                <div id="image7" class="image-section">
+                    <img src="/img/demo-img-1.png" alt="Demo Image 7" width="80%">
+                </div>
+                <div id="image8" class="image-section">
+                    <img src="/img/demo-img-6.jpg" alt="Demo Image 8" width="80%">
                 </div>
             </div>
         </div>
@@ -1485,20 +1496,7 @@
         </div>
         <!-- fooetr area end -->
 
-        <!-- 
-        <script>
-            var crsr = document.querySelector("#cursor")
-            var crsrblr = document.querySelector("#cursor-blr")
-            document.addEventListener("mousemove", function(dets) {
-                crsr.style.left = dets.x + "px"
-                crsr.style.top = dets.y + "px"
-                
-                crsrblr.style.left = dets.x -150 + "px"
-                crsrblr.style.top = dets.y -150 + "px"
-            })
-           
-        </script> -->
-
+ 
         <script>
             wow = new WOW(
                 {
@@ -1513,7 +1511,7 @@
 
             new wow().init();
         </script>
-        
+
         <script src="/js/demo.js"></script>
         <script src="/js/wow.js"></script>
         <script src="/js/bootstrap.bundle.min.js"></script>
