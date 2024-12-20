@@ -16,6 +16,7 @@ body{
     src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
 }
 
+
 /* btn css */
 .btn-close{font-size: 20px!important;}
 .button-btn-50{border-radius: 50px !important;}
@@ -1406,7 +1407,43 @@ th, td {
     .px-25{
         padding: 0px 10px !important;
     }
-    .effect-1,.effect-2{display: none;}
+    .left-section img{
+        transform: none;
+    }
+    .border-btn {
+        display:flex;
+        padding:2px 0px !important;
+        margin-bottom: 20px;
+    }
+    
+    .fs-18 ,.fs-16{font-size: 14px !important;}
+    .fs-60{font-size: 25px;font-weight: bolder;}
+    .fs-36{font-size: 25px; text-align: center;}
+    .button-btn{font-size: 14px;padding: 10px 20px;}
+    .left-section h1{
+        font-size: 12px !important;
+    }
+    .right-section p{text-align: center; font-size: 14px !important;line-height:26px;}
+    .wave_shape ,.effect-1,.effect-2 ,.effect-3{display: none;}
+    .py-100{
+        padding: 50px 0px !important;
+    }
+    .contract-shadow{
+        margin: 0px 10px;
+    }
+    .Platforms-btn .bg-white-btn{
+        text-align: center;
+        margin-bottom: 10px !important;
+    }
+    .Platforms-btn a {
+        margin: 0px 0px !important;
+    }
 
+    .image-section img{
+        width: 100% !important;
+    }
+    .py-35{padding: 0px 15px !important;}
+    .ps-4,.ps-5{padding-left: 0px !important;}
 }
+
 
