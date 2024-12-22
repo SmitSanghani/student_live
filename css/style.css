@@ -74,7 +74,7 @@ body{
 .py-35{padding: 0px 35px !important;}
 .opacity-1_25{opacity: 1.25;}
 .ms-16{margin-left: 16px;margin-bottom: 0;}
-.ps-50{padding-left: 50px;}
+.ps-50{padding-left: 50px !important;}
 /* index page*/
 .nav-logo{max-width: 170px;}
 .menu-logo{
@@ -1404,6 +1404,7 @@ th, td {
 /* index risponsive */
 
 @media screen and (min-width:0px) and (max-width:767px){
+    .home-bg .container{padding-top: 50px !important;}
     .px-25{
         padding: 0px 10px !important;
     }
@@ -1443,7 +1444,8 @@ th, td {
         width: 100% !important;
     }
     .py-35{padding: 0px 15px !important;}
-    .ps-4,.ps-5{padding-left: 0px !important;}
+    .ps-5{padding-left: 5px !important;}
+    .my-5{margin: 10px 0px !important;}
+    .ps-50{padding-left: 10px !important;}
 }
-
 

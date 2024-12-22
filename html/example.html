@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <title>student-website</title>
     <link rel="stylesheet" href="../css/all.css">
@@ -18,207 +18,122 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
     <script src="/js/wow.js"></script>
-
-    <style>
-        /* Responsive CSS */
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        h2 {
-            font-size: 28px;
-        }
-
-        .container {
-            padding: 15px;
-        }
-
-        .content-section ul li {
-            line-height: 1.6;
-        }
-
-        /* Mobile styles */
-        @media (max-width: 768px) {
-            h2.fs-36 {
-                font-size: 24px;
-            }
-
-            .fs-16 {
-                font-size: 14px;
-            }
-
-            .content-section ul li {
-                font-size: 14px;
-            }
-
-            .link-btn {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .border-btn {
-                margin-bottom: 10px;
-            }
-
-            .w-80 {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h2.fs-36 {
-                font-size: 20px;
-            }
-
-            .fs-16 {
-                font-size: 12px;
-            }
-
-            .button-btn {
-                font-size: 14px;
-            }
-        }
-    </style>
 </head>
+<style>
+    @keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline {
+    opacity: 0;
+    animation: slide-in 1s ease-in-out forwards;
+    margin-bottom: 50px;
+}
+</style>
+
 <body>
-    
+    <!-- Game Development Process area start -->
     <div class="container-fluid py-100">
         <div class="container">
             <div class="row">
                 <h2 class="fs-36 white fw-semibold text-center mb-4">
-                    Key Features of Our<span class="title-span">Web3 Game Development Platform</span>
+                    Web3 Game<span class="title-span">Development Process</span>
                 </h2>
-                <p class="fs-16 white fw-normal text-center w-80 m-auto">At Global Blockchain Solution, we are at the
-                    forefront of Web3 game development, crafting innovative platforms that empower players, unlock
-                    ownership, and fuel the future of gaming. Other than designing real-looking characters, we focus on
-                    the game's security, interoperability, and scalability.</p>
-                <div class="contract-shadow mt-4">
-                    <div class="contract-shadow-inner ">
-                        <div class="link-btn d-flex d-md-flex justify-content-around mb-4">
-                            <div class="border-btn">
-                                <a href="" class="button-btn-2 text-decoration-none fs-18 fw-medium"
-                                    data-target="content1">3D Immersive Environments</a>
-                            </div>
-                            <div class="border-btn">
-                                <a href="" class="button-btn-2 text-decoration-none fs-18 fw-medium"
-                                    data-target="content2">Realistic Avatars</a>
-                            </div>
-                            <div class="border-btn">
-                                <a href="" class="button-btn-2 text-decoration-none fs-18 fw-medium"
-                                    data-target="content3">Robust Digital Economy</a>
-                            </div>
-                            <div class="border-btn">
-                                <a href="" class="button-btn-2 text-decoration-none fs-18 fw-medium"
-                                    data-target="content4">Interoperable Experiences</a>
+                <p class="fs-16 white fw-normal text-center w-80 m-auto mb-5">At Global Blockchain Solution, we are
+                    at
+                    the
+                    forefront of
+                    Web3 game development, crafting innovative platforms that empower players, unlock ownership, and
+                    fuel the future of gaming. Other than designing real-looking characters, we focus on the game's
+                    security, interoperability, and scalability.
+                </p>
+            </div>
+            <div class="row mt-5 text-center g-90">
+                <div class="col-md-4 ">
+                    <div class="outer-Process-box d-flex h-100 bg-gradient-clr border-r-30 p2">
+                        <div class="Process-box">
+                            <div class="heading-box bg-gradient-clr white fw-semibold">Concept & Ideation</div>
+                            <img src="/img/Game-dw-img-1.png" alt="" width="60px" class="mb-3">
+                            <p class="fs-16 fw-normal white mb-0">The development of smart contracts is the next
+                                crucial
+                                step.
+                                These
+                                contracts are self-executing code stored on the blockchain that automatically
+                                governs
+                                in-game processes and transactions. These contracts ensure fairness, transparency,
+                                and
+                                security by eliminating the need for manual intervention or centralized control.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="outer-Process-box d-flex h-100 bg-gradient-clr border-r-30 p2">
+                        <div class="Process-box">
+                            <div class="heading-box bg-gradient-clr white fw-semibold">Game Design & Economy</div>
+                            <img src="/img/Game-dw-img-2.png" alt="" width="60px" class="mb-3">
+                            <p class="fs-16 fw-normal white mb-0">Our Web3 game development company designs engaging
+                                gameplay
+                                loops, NFT functionalities, and P2E models that incentivize players and fuel in-game
+                                economy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="outer-Process-box d-flex h-100 bg-gradient-clr border-r-30 p2">
+                        <div class="Process-box">
+                            <div class="heading-box bg-gradient-clr white fw-semibold">Prototype & Testing</div>
+                            <img src="/img/Game-dw-img-3.png" alt="" width="60px" class="mb-3">
+                            <p class="fs-16 fw-normal white mb-0">We create a functional prototype incorporating
+                                your
+                                game's
+                                core
+                                mechanics and features. Through rigorous playtesting and user feedback, we refine
+                                the
+                                gameplay, identify and address any potential issues, and ensure a smooth and
+                                satisfying
+                                player experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-5">
+                        <div class="outer-Process-box d-flex h-100 bg-gradient-clr border-r-30 p2">
+                            <div class="Process-box">
+                                <div class="heading-box bg-gradient-clr white fw-semibold">Blockchain Integration &
+                                    Smart
+                                    Contract Development</div>
+                                <img src="/img/Game-dw-img-4.png" alt="" width="60px" class="mb-3">
+                                <p class="fs-16 fw-normal white mb-0">We leverage our expertise in blockchain
+                                    technology
+                                    to
+                                    seamlessly integrate a secure and transparent blockchain network into your game.
+                                    This
+                                    involves creating robust smart contracts that govern the economics of the game.
+                                </p>
                             </div>
                         </div>
-
-                        <div id="content1" class="content-section">
-                            <div class="Ownership-section align-items-center d-flex mb-4">
-                                <img src="/img/Ownership-img.png" alt="Decentralized Ownership">
-                                <span class="title-span"><span class="title-span fs-30 ms-3 fw-semibold">Web3 Game
-                                        Development Platform</span>
-                            </div>
-                            <div class="accordion-body position-relative">
-                                <ul>
-                                    <li class="white mb-3 fs-16 fw-normal">The games we develop let players truly own
-                                        in-game items like weapons, land, characters, and more represented as NFTs on
-                                        the
-                                        blockchain.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">The blockchain guarantees ownership
-                                        verification
-                                        and immutability, preventing fraud and ensuring player trust.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">Players can trade their NFTs on secondary
-                                        marketplaces, unlocking new economic opportunities and fostering vibrant in-game
-                                        economies.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">We can implement DAOs in your games, allowing
-                                        users to participate in decision-making regarding game development, future
-                                        add-ons,
-                                        and the overall ecosystem.</li>
-                                </ul>
-                                <button class="button-btn text-decoration-none white fw-semibold mt-3">Let's
-                                    Connect!</button>
-                            </div>
-                        </div>
-                        <div id="content2" class="content-section" style="display: none;">
-                            <div class="Ownership-section align-items-center d-flex mb-4">
-                                <img src="/img/Ownership-img.png" alt="Decentralized Ownership">
-                                <span class="title-span"><span class="title-span fs-30 ms-3 fw-semibold">
-                                        Development Platform</span>
-                            </div>
-                            <div class="accordion-body position-relative">
-                                <ul>
-                                    <li class="white mb-3 fs-16 fw-normal">The games we develop let players truly own
-                                        in-game items like weapons, land, characters, and more represented as NFTs on
-                                        the
-                                        blockchain.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">The blockchain guarantees ownership
-                                        verification
-                                        and immutability, preventing fraud and ensuring player trust.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">Players can trade their NFTs on secondary
-                                        marketplaces, unlocking new economic opportunities and fostering vibrant in-game
-                                        economies.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">We can implement DAOs in your games, allowing
-                                        users to participate in decision-making regarding game development, future
-                                        add-ons,
-                                        and the overall ecosystem.</li>
-                                </ul>
-                                <button class="button-btn text-decoration-none white fw-semibold mt-3">Let's
-                                    Connect!</button>
-                            </div>
-                        </div>
-                        <div id="content3" class="content-section" style="display: none;">
-                            <div class="Ownership-section align-items-center d-flex mb-4">
-                                <img src="/img/Ownership-img.png" alt="Decentralized Ownership">
-                                <span class="title-span"><span class="title-span fs-30 ms-3 fw-semibold">
-                                        Development The games we develop</span>
-                            </div>
-                            <div class="accordion-body position-relative">
-                                <ul>
-                                    <li class="white mb-3 fs-16 fw-normal">The games we develop let players truly own
-                                        in-game items like weapons, land, characters, and more represented as NFTs on
-                                        the
-                                        blockchain.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">The blockchain guarantees ownership
-                                        verification
-                                        and immutability, preventing fraud and ensuring player trust.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">Players can trade their NFTs on secondary
-                                        marketplaces, unlocking new economic opportunities and fostering vibrant in-game
-                                        economies.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">We can implement DAOs in your games, allowing
-                                        users to participate in decision-making regarding game development, future
-                                        add-ons,
-                                        and the overall ecosystem.</li>
-                                </ul>
-                                <button class="button-btn text-decoration-none white fw-semibold mt-3">Let's
-                                    Connect!</button>
-                            </div>
-                        </div>
-                        <div id="content4" class="content-section" style="display: none;">
-                            <div class="Ownership-section align-items-center d-flex mb-4">
-                                <img src="/img/Ownership-img.png" alt="Decentralized Ownership">
-                                <span class="title-span"><span class="title-span fs-30 ms-3 fw-semibold">
-                                        Development </span>
-                            </div>
-                            <div class="accordion-body position-relative">
-                                <ul>
-                                    <li class="white mb-3 fs-16 fw-normal">The games we develop let players truly own
-                                        in-game items like weapons, land, characters, and more represented as NFTs on
-                                        the
-                                        blockchain.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">The blockchain guarantees ownership
-                                        verification
-                                        and immutability, preventing fraud and ensuring player trust.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">Players can trade their NFTs on secondary
-                                        marketplaces, unlocking new economic opportunities and fostering vibrant in-game
-                                        economies.</li>
-                                    <li class="white mb-3 fs-16 fw-normal">We can implement DAOs in your games, allowing
-                                        users to participate in decision-making regarding game development, future
-                                        add-ons,
-                                        and the overall ecosystem.</li>
-                                </ul>
-                                <button class="button-btn text-decoration-none white fw-semibold mt-3">Let's
-                                    Connect!</button>
+                    </div>
+                    <div class="col-md-5 ">
+                        <div class="outer-Process-box d-flex h-100 bg-gradient-clr border-r-30 p2">
+                            <div class="Process-box">
+                                <div class="heading-box bg-gradient-clr white fw-semibold">Launch & Ongoing Support
+                                </div>
+                                <img src="/img/Game-dw-img-5.png" alt="" width="60px" class="mb-3">
+                                <p class="fs-16 fw-normal white mb-0">Our Web3 game development company not only
+                                    assists
+                                    you
+                                    with the launch but also delivers ongoing support and maintenance to ensure the
+                                    smooth
+                                    operation of your game, address any technical challenges, and adapt to new
+                                    changes.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -226,8 +141,237 @@
             </div>
         </div>
     </div>
-    <script src="/js/demo.js"></script>
-    <script src="/js/wow.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- Game Development Process area end -->
+    <div class="container-fluid py-100">
+        <div class="container ">
+            <h2 class="fs-36 white my-3 fw-semibold text-center">
+                Benefits of <span class="title-span">Metaverse Development</span>
+            </h2>
+            <p class="fs-16 white fw-normal  text-center">With our metaverse development company, you can experience
+                every benefit of a virtual space that you can think of.
+            </p>
+            <div class="row mt-5 g-60">
+                <div class="col-md-4 timeline ">
+                    <div class="play-shadow w-100">
+                        <div class="Benifit-card text-center h-100 w-100 ">
+                            <h2 class="fs-24 fw-semibold">
+                                <span class="title-span">True Digital Ownership</span>
+                            </h2>
+                            <p class="fs-16 white fw-normal">Our Web3 game developer crafts a framework that works on a
+                                popular feature of blockchain-powered games: letting users own their assets in the form
+                                of NFTs. Therefore, the players can own in-game assets like avatars, weapons, land, and
+                                more as NFTs on blockchain - completely secure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animation ">
+                    <div class="play-shadow h-100 w-100">
+                        <div class="Benifit-card text-center h-100 w-100 ">
+                            <h2 class="fs-24 fw-semibold">
+                                <span class="title-span">Play to Earn Model</span>
+                            </h2>
+                            <p class="fs-16 white fw-normal">Why not focus on providing players with a rewarding
+                                experience when developing a game? We add secure P2E game models that help users earn
+                                crypto tokens and NFTs for their time and effort playing your game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animation">
+                    <div class="play-shadow h-100 w-100">
+                        <div class="Benifit-card text-center h-100 w-100 ">
+                            <h2 class="fs-24 fw-semibold">
+                                <span class="title-span">Transparent Mechanics</span>
+                            </h2>
+                            <p class="fs-16 white fw-normal">Our Web3 gaming company ensures that every project we
+                                handle has transparent mechanics by encoding probabilities on blockchain to build trust
+                                between your game and its players.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animation ">
+                    <div class="play-shadow h-100 w-100">
+                        <div class="Benifit-card text-center h-100 w-100 ">
+                            <h2 class="fs-24 fw-semibold">
+                                <span class="title-span">Transparent Mechanics</span>
+                            </h2>
+                            <p class="fs-16 white fw-normal">Our Web3 gaming company ensures that every project we
+                                handle has transparent mechanics by encoding probabilities on blockchain to build trust
+                                between your game and its players.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animation ">
+                    <div class="play-shadow h-100 w-100">
+                        <div class="Benifit-card text-center h-100 w-100 ">
+                            <h2 class="fs-24 fw-semibold">
+                                <span class="title-span">Transparent Mechanics</span>
+                            </h2>
+                            <p class="fs-16 white fw-normal">Our Web3 gaming company ensures that every project we
+                                handle has transparent mechanics by encoding probabilities on blockchain to build trust
+                                between your game and its players.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="button-btn text-decoration-none white fw-semibold ">Let's Connect!</button>
+            </div>
+        </div>
+        <div class="effect-3">
+            <img src="/img/dot-3.png" alt="" width="100%">
+        </div>
+    </div>
+
+    <!-- Real-World swervice area start -->
+    <div class="container-fluid py-100">
+        <div class="container">
+            <div class="row">
+                <h2 class="fs-36 white fw-semibold text-center mb-4">
+                    Real-World Use Cases of<span class="title-span">Web3 Game Development Services</span>
+                </h2>
+                <p class="fs-16 white fw-normal text-center w-80 m-auto mb-5">At our Web3 company, we are passionate
+                    about
+                    creating immersive and engaging Web3 games that cater to a diverse range of players and span
+                    various
+                    genres.
+                </p>
+            </div>
+            <div class="row text-center justify-content-center g-4">
+                <div class="col-md-3">
+                    <div class="solution-shadow">
+                        <img src="/img/real-world-img-1.png" alt="">
+                        <h2 class="fs-18 white">Fan Engagement Games</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="solution-shadow">
+                        <img src="/img/real-world-img-2.png" alt="">
+                        <h2 class="fs-18 white">Multiplayer RPG Games</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="solution-shadow">
+                        <img src="/img/real-world-img-3.png" alt="">
+                        <h2 class="fs-18 white">Business Simulations</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="solution-shadow">
+                        <img src="/img/real-world-img-4.png" alt="">
+                        <h2 class="fs-18 white">Play-to-Earn Games</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="solution-shadow">
+                        <img src="/img/real-world-img-5.png" alt="">
+                        <h2 class="fs-18 white">Blockchain Edutainment</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="solution-shadow">
+                        <img src="/img/real-world-img-6.png" alt="">
+                        <h2 class="fs-18 white">First-Person Shooter Games</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="solution-shadow">
+                        <img src="/img/real-world-img-7.png" alt="">
+                        <h2 class="fs-18 white">Sci-fi Adventure Games</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Real-World swervice area end -->
+
+
+    <!-- fooetr area start -->
+    <div class="container-fluid py-100">
+        <div class="row py-35">
+            <div class="col-md-4">
+                <img src="/img/logo-nav.png" alt="footer logo">
+                <p class="fs-16 white fw-normal mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book
+                </p>
+                <ul class="footer-icon p-0 d-flex">
+                    <li>
+                        <a href="" class="white"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="white"><i class="fa-brands fa-skype"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="white"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="white"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 ps-50">
+                <h2 class="fs-24 fw-semibold white mb-3">Company</h2>
+                <h3 class="fs-16 fw-medium white my-4">Home</h3>
+                <h3 class="fs-16 fw-medium white mb-4">About us</h3>
+                <h3 class="fs-16 fw-medium white mb-4">Privacy Policy</h3>
+                <h3 class="fs-16 fw-medium white mb-4">SLA & Terms of User</h3>
+                <h3 class="fs-16 fw-medium white mb-4">Customers</h3>
+            </div>
+            <div class="col-md-3 ps-50">
+                <h2 class="fs-24 fw-semibold white mb-3">Solutions</h2>
+                <h3 class="fs-16 fw-medium white my-4">Direct Selling Software</h3>
+                <h3 class="fs-16 fw-medium white mb-4">Affiliate Marketing Software</h3>
+                <h3 class="fs-16 fw-medium white mb-4">EAS IT Consulting</h3>
+                <h3 class="fs-16 fw-medium white mb-4">MLM CRM Software</h3>
+                <h3 class="fs-16 fw-medium white mb-4">eCommerce MLM Software</h3>
+            </div>
+            <div class="col-md-3">
+                <h2 class="fs-24 fw-semibold white mb-3">Get in Touch</h2>
+                <h3 class="fs-16 fw-medium white my-5">
+                    <img src="/img/phone.png" alt="">
+                    <a href="" class="text-decoration-none  white ps-1">+1 (765) 896-5271</a>
+                </h3>
+                <h3 class="fs-16 fw-medium white my-5">
+                    <img src="/img/email.png" alt="">
+                    <a href="" class="text-decoration-none  white ps-1">info@globalmlmsolution.com</a>
+                </h3>
+                <h3 class="fs-16 fw-medium white my-5">
+                    <img src="/img/location.png" alt="">
+                    <a href="" class="text-decoration-none  white ps-1">66 West Flagler Street, Suite 900, Miami Florida
+                        33130 - USA</a>
+                </h3>
+            </div>
+        </div>
+        <hr class="white opacity-1_25">
+        <div class="text-center">
+            <h2 class="fs-16 fw-medium white">2023 © Global MLM Software All rights reserved.</h2>
+        </div>
+        <!-- fooetr area end -->
+
+
+        <script>
+            wow = new WOW(
+                {
+                    animateClass: 'animated',
+                    offset: 100,
+                    callback: function (box) {
+                        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                    }
+                }
+            );
+            wow.init();
+
+            new wow().init();
+        </script>
+
+        <script src="/js/demo.js"></script>
+        <script src="/js/wow.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
