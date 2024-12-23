@@ -20,22 +20,51 @@
     <script src="/js/wow.js"></script>
 </head>
 <style>
-    @keyframes slide-in {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.animation {
+  animation-timeline: view(10% 10%);
+  animation-name: grow;
+  animation-fill-mode: both;
+  animation-duration: 1ms; 
+  animation-timing-function: linear;
 }
 
-.timeline {
-    opacity: 0;
-    animation: slide-in 1s ease-in-out forwards;
-    margin-bottom: 50px;
+@keyframes grow {
+  from {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+  50%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.3;
+  }
 }
+.animation1 {
+  animation-timeline: view(block 10% 10%);
+  animation-name: grow1;
+  animation-fill-mode: both;
+  animation-duration: 1ms; 
+  animation-timing-function: linear;
+}
+
+@keyframes grow1 {
+  from {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+  50%{
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
 </style>
 
 <body>
@@ -143,7 +172,7 @@
     </div>
     <!-- Game Development Process area end -->
     <div class="container-fluid py-100">
-        <div class="container ">
+        <div class="container">
             <h2 class="fs-36 white my-3 fw-semibold text-center">
                 Benefits of <span class="title-span">Metaverse Development</span>
             </h2>
@@ -151,7 +180,7 @@
                 every benefit of a virtual space that you can think of.
             </p>
             <div class="row mt-5 g-60">
-                <div class="col-md-4 timeline ">
+                <div class="col-md-4  animation">
                     <div class="play-shadow w-100">
                         <div class="Benifit-card text-center h-100 w-100 ">
                             <h2 class="fs-24 fw-semibold">
@@ -165,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 animation ">
+                <div class="col-md-4  animation">
                     <div class="play-shadow h-100 w-100">
                         <div class="Benifit-card text-center h-100 w-100 ">
                             <h2 class="fs-24 fw-semibold">
@@ -191,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 animation ">
+                <div class="col-md-6  animation">
                     <div class="play-shadow h-100 w-100">
                         <div class="Benifit-card text-center h-100 w-100 ">
                             <h2 class="fs-24 fw-semibold">
@@ -204,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 animation ">
+                <div class="col-md-6  animation">
                     <div class="play-shadow h-100 w-100">
                         <div class="Benifit-card text-center h-100 w-100 ">
                             <h2 class="fs-24 fw-semibold">
@@ -230,7 +259,7 @@
     <!-- Real-World swervice area start -->
     <div class="container-fluid py-100">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <h2 class="fs-36 white fw-semibold text-center mb-4">
                     Real-World Use Cases of<span class="title-span">Web3 Game Development Services</span>
                 </h2>
